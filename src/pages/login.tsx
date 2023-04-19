@@ -12,8 +12,8 @@ const navigate = useNavigate()
         navigate('/')
         
     }
-    return <div>
+    return <div className="card col-6 col-lg-3 mx-auto">
         <p>sign in with google to continue</p>
-        <button onClick={signInWithGoogle}>sign in with google </button>
+        <button className="btn btn-info" onClick={signInWithGoogle}>sign in with google </button>
         </div>
 }
