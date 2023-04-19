@@ -19,10 +19,10 @@ const navigate = useNavigate()
 
 <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">Navbar</a>
-    <div className="text-danger d-inline-block">
-        <Link className='none' to="/"> Home</Link>
-        <Link className='none' to="/login"> Login</Link>
+    <a className="navbar-brand" href="#">RE-connect</a>
+    <div className="text-danger  d-inline-block">
+        <Link className='none btn btn-warning mr-5 align-self-center' to="/"> Home</Link>
+        <Link className='none btn btn-info ml-3 ' to="/login"> Login</Link>
     </div>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
@@ -51,9 +51,9 @@ const navigate = useNavigate()
                 <div className="container bg- warning">
                     <div className="row bg-dark text-white p-3 rounded">
                         <img className='col-2 col-lg-1 img-fluid' src={user?.photoURL || ""} width="100" />
-                        <div className="row-col-1 col justify-content-start">
-                        <h4 className='col-4 text-start'>{user?.displayName}</h4>
-                         <p className=' lead col ms-auto text-start' >{user?.email}</p>
+                        <div className="row-col-1 col justify-content-start align-items-center">
+                            <h4 className='col-4 text-start'>{user?.displayName}</h4>
+                             <p className=' lead col ms-auto text-start' >{user?.email}</p>
                         </div>
                         <button className=' col-3 col-lg-1 align-self-center btn btn-danger ml-0' onClick={signUserOut}> log out</button>
                     </div>
