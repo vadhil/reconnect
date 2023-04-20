@@ -52,7 +52,7 @@ const navigate = useNavigate()
            {user && (
                 <div className="container bg- warning mb-3">
                     <div className="row bg-dark text-white p-3 rounded">
-                        <img className='col-2 col-lg-1 img-fluid' src={user?.photoURL || ""} width="100" />
+                        <img className='col-2 col-lg-1 img-fluid' src={user?.photoURL || ""} width="100" height="100"/>
                         <div className="row-col-1 col justify-content-start align-items-center">
                             <h4 className='col-4 text-start'>{user?.displayName}</h4>
                              <p className=' lead col ms-auto text-start' >{user?.email}</p>
