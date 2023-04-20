@@ -22,7 +22,9 @@ const navigate = useNavigate()
     <a className="navbar-brand" href="#">RE-connect</a>
     <div className="text-danger  d-inline-block">
         <Link className='none btn btn-warning mr-5 align-self-center' to="/"> Home</Link>
-        <Link className='none btn btn-info ml-3 ' to="/login"> Login</Link>
+       {!user?  <Link className='none btn btn-info ml-3 ' to="/login"> Login</Link>: 
+        <Link className='none btn btn-success ml-3 ' to="/createpost"> Create Post</Link>
+       }
     </div>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
@@ -48,7 +50,7 @@ const navigate = useNavigate()
 
 .       <div className="">
            {user && (
-                <div className="container bg- warning">
+                <div className="container bg- warning mb-3">
                     <div className="row bg-dark text-white p-3 rounded">
                         <img className='col-2 col-lg-1 img-fluid' src={user?.photoURL || ""} width="100" />
                         <div className="row-col-1 col justify-content-start align-items-center">

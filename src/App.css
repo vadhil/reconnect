@@ -5,6 +5,9 @@
   font-family: 'Clash Display', sans-serif;
                                                 
 }
+.height{
+  height: 100px;
+}
 
 .App-logo {
   height: 40vmin;
